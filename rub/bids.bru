@@ -1,0 +1,20 @@
+meta {
+  name: bids
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{base_url}}/items/:id/bids
+  body: json
+  auth: inherit
+}
+
+params:path {
+  id: 1773129793315
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

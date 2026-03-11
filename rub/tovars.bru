@@ -1,0 +1,24 @@
+meta {
+  name: tovars
+  type: http
+  seq: 8
+}
+
+delete {
+  url: {{base_url}}/itmes/:id
+  body: json
+  auth: inherit
+}
+
+params:path {
+  id: 
+}
+
+headers {
+  Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE3NzMxMjk3MzA1NTYsInVzZXJuYW1lIjoiZGFuIiwiaWF0IjoxNzczMjA1NTkzLCJleHAiOjE3NzMyOTE5OTN9.Nd98LSRYPkDai1h0FOtudBjWT3qCjzwxl3iDKzZDsG4
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

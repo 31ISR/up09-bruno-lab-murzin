@@ -1,0 +1,25 @@
+meta {
+  name: tovar
+  type: http
+  seq: 7
+}
+
+post {
+  url: {{base_url}}/items
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "title": "iPhone 14",
+    "description": "Новый iPhone 14 в идеальном состоянии, все аксессуары в комплекте",
+    "price": 80000,
+    "imageUrl": "https://example.com/iphone.jpg"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
